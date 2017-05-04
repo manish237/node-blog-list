@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-// const bodyParser = require('body-parser');
-// const jsonParser = bodyParser.json();
+const bodyParser = require('body-parser');
+const jsonParser = bodyParser.json();
+const queryParser = bodyParser.urlencoded({ extended: true });
+
 
 
 const {BlogPosts} = require('./models');
@@ -13,9 +15,13 @@ BlogPosts.create(
 BlogPosts.create(
     'Title-02', 'Content-03', 'Author-03', Date.now() );
 
-/*
-router.get('/:id', (req, res) => {
-    res.json(BlogPosts.get(req.params.id));
+
+router.get('/', queryParser, (req, res) => {
+    if(req.query.id!==undefined) {
+        res.json(BlogPosts.get(req.query.id));
+    }
+    else
+        res.json(BlogPosts.get())
 });
 
 
@@ -67,5 +73,5 @@ router.put('/:id', jsonParser, (req, res) => {
     });
     res.status(204).json(updatedItem);
 })
-*/
+
 module.exports = router;
