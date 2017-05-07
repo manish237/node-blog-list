@@ -31,7 +31,6 @@ const BlogPosts = {
         // if id passed in, retrieve single post,
         // otherwise send all posts.
         if (id !== null) {
-            console.log("inside -- " + id)
             return this.posts.find(post => post.id === id);
         }
         // return posts sorted (descending) by
