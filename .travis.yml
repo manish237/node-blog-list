@@ -2,7 +2,6 @@ language: node_js
 node_js: node
 deploy:
   provider: heroku
-  api_key:
     secure: fxcs+/J5aT/VdOOd0ah1L3op/Yb692j2hdgThasBgYfC9svNLHW2Xlo+5SIc8oBCpWCDuwpg6hG2J7tXLDFXhtcI6EKdQsP6MJ9FYk4SKAX9elpyq7nqfXWuIOK/K4stsgvFlrBbV1AzmNtGYuA2KTREWa296R+O7je2Z/udWtf42tBknCrhG8+uirpXj/XTE9b+L8u+aY5agIjSBojFM03j4ao7tn0n+q3Rl2N9S2xCh+DV44Tj8O6bdoTLLuuCaW4HIPxQfv2RHExpy/k8os2obBa3SZZDOwLUOW337c3yoc9toM/lAaDgZ8yweW5GusyFFePqJRALQWahYWl6k2OChphETKw+vnr+WlUPrjDIn5k2qlsdDXQJ4Oxe9ajABfimPJpB+rLc+zGJgU3IbADA1YgfQPZ9FfcVDiGH2UHKM/wuBNkJYLj9y8pJJcIKGqzdoZh4YNkj5QY6ulzBHjkSfAi4/U4hGeNlKItFkZ2SLVkyYcVw/a9fPIrc7UjhU63eslEKBOyvvkSUiFP174+9AVduCOCHb4N4s6tQqCqdymOOHuwTP9u/VGV4OJyBcln2qlR+MxGxFZl9xFfwG3vFe8tDEGG5JW+6WboEfZrsjzuzO72pqELN4tWPl5bErQy1+MJRgQt8xiXGRNWlfjIG/ZqNE+GqJTmypwHqWQA=
   app: hidden-citadel-19045
   on:
