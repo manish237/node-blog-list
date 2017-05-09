@@ -57,7 +57,7 @@ router.post('/', jsonParser, (req, res) => {
         .create({
             title: req.body.title,
             content: req.body.content,
-            created: Date.now(),
+            created: req.body.created || Date.now(),
             author: {
                     firstName: req.body.author.firstName,
                     lastName: req.body.author.lastName
